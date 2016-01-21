@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="elap" transaction-type="JTA">
+
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+		<jta-data-source>java:jboss/datasources/elapDS</jta-data-source>
+		
+		<class>com.inetpsa.umpr.elap.model.Acao</class>
+		<class>com.inetpsa.umpr.elap.model.Ferramenta</class>
+		<class>com.inetpsa.umpr.elap.model.HistoricoAcao</class>
+		<class>com.inetpsa.umpr.elap.model.HistoricoProjeto</class>
+		<class>com.inetpsa.umpr.elap.model.Projeto</class>
+		<class>com.inetpsa.umpr.elap.model.Tema</class>
+		<class>com.inetpsa.umpr.elap.model.Usuario</class>
+
+		<properties>
+		
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+			
+			<property name="hibernate.connection.provider_class" value="org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider" />
+			<property name="hibernate.c3p0.min_size" value="5" />
+			<property name="hibernate.c3p0.max_size" value="20" />
+			<property name="hibernate.c3p0.timeout" value="180" />
+			<property name="hibernate.c3p0.idle_test_period" value="100" />
+			
+		</properties>
+
+	</persistence-unit>
+</persistence>
