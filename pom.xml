@@ -16,7 +16,7 @@
 		<hibernate.version>5.0.7.Final</hibernate.version>
 		<mysql.connector.version>5.1.38</mysql.connector.version>
 		
-		<primefaces.theme>pepper-grinder</primefaces.theme>
+		<primefaces.theme>sam</primefaces.theme>
 		
 	</properties>
 
