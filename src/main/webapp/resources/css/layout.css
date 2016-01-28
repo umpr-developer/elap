@@ -10,11 +10,12 @@ body {
 	min-height: 600px;
 }
 
-.north {
+#north .ui-layout-unit-content {
+	overflow: hidden !important;
+	vertical-align: middle;
 }
 
-.center {
-}
-
-.south {
+#north .logo{
+	height: auto;
+	width: auto;
 }
