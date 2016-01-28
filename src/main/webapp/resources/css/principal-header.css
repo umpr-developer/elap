@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+
+.north .ui-layout-unit-content {
+	overflow: hidden !important;
+	vertical-align: middle;
+}
