@@ -9,21 +9,3 @@ body {
 	max-width: 1020px;
 	min-height: 640px;
 }
-
-.header {
-	
-}
-
-.header .ui-layout-unit-content {
-	overflow: hidden !important;
-	padding: 0 !important;
-	margin: 0 !important;
-	border-width: 0 !important;
-}
-
-.header .logo {
-	height: 75px;
-	width: auto;
-	float: left;
-	padding-right: 10px;
-}
